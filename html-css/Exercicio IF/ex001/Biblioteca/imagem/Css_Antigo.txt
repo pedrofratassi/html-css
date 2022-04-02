@@ -1,0 +1,42 @@
+nav{
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li > a{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #FAA689;
+}
+
+footer{
+    background-color: gray;
+    padding: 2px;
+    width: 40%;
+    text-align: center;
+}
+
+.container{
+    border: solid 1px #555;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 1px;
+
+}
