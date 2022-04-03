@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo de Imagem</title>
+    <title>Fundo de Fixo de Tela</title>
     <style>
         body{
             height: 100vh;
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
+
+
+            /*
+                Podemos usar Shorthand (Mãozinha) para todos esses background, sendo a hieraquia a essa:
+
+                color > image > position > repeat > [size] > attachment.
+            */
+                background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+
+                /* Temos que fazer a parte do size por fora da Shorthand, pois não está funcionando como deveria ser. */
+                background-size: cover;
+            
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid blue;
@@ -28,6 +43,11 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque tenetur explicabo qui, dolorum laborum similique non, ipsam amet ipsa at quo quibusdam debitis dolore facilis! Labore accusantium dicta consequuntur sit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, quam. Magnam corporis voluptatibus expedita aspernatur, officiis consectetur ex quis culpa asperiores rerum in amet aliquam iusto obcaecati quos at id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aliquam quod voluptates alias cum ut, blanditiis corrupti aliquid nulla odio corporis numquam quisquam ipsa impedit, optio voluptatum cupiditate magnam sunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque tenetur explicabo qui, dolorum laborum similique non, ipsam amet ipsa at quo quibusdam debitis dolore facilis! Labore accusantium dicta consequuntur sit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, quam. Magnam corporis voluptatibus expedita aspernatur, officiis consectetur ex quis culpa asperiores rerum in amet aliquam iusto obcaecati quos at id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aliquam quod voluptates alias cum ut, blanditiis corrupti aliquid nulla odio corporis numquam quisquam ipsa impedit, optio voluptatum cupiditate magnam sunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque tenetur explicabo qui, dolorum laborum similique non, ipsam amet ipsa at quo quibusdam debitis dolore facilis! Labore accusantium dicta consequuntur sit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, quam. Magnam corporis voluptatibus expedita aspernatur, officiis consectetur ex quis culpa asperiores rerum in amet aliquam iusto obcaecati quos at id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aliquam quod voluptates alias cum ut, blanditiis corrupti aliquid nulla odio corporis numquam quisquam ipsa impedit, optio voluptatum cupiditate magnam sunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque tenetur explicabo qui, dolorum laborum similique non, ipsam amet ipsa at quo quibusdam debitis dolore facilis! Labore accusantium dicta consequuntur sit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, quam. Magnam corporis voluptatibus expedita aspernatur, officiis consectetur ex quis culpa asperiores rerum in amet aliquam iusto obcaecati quos at id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aliquam quod voluptates alias cum ut, blanditiis corrupti aliquid nulla odio corporis numquam quisquam ipsa impedit, optio voluptatum cupiditate magnam sunt.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque tenetur explicabo qui, dolorum laborum similique non, ipsam amet ipsa at quo quibusdam debitis dolore facilis! Labore accusantium dicta consequuntur sit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, quam. Magnam corporis voluptatibus expedita aspernatur, officiis consectetur ex quis culpa asperiores rerum in amet aliquam iusto obcaecati quos at id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aliquam quod voluptates alias cum ut, blanditiis corrupti aliquid nulla odio corporis numquam quisquam ipsa impedit, optio voluptatum cupiditate magnam sunt.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque tenetur explicabo qui, dolorum laborum similique non, ipsam amet ipsa at quo quibusdam debitis dolore facilis! Labore accusantium dicta consequuntur sit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, quam. Magnam corporis voluptatibus expedita aspernatur, officiis consectetur ex quis culpa asperiores rerum in amet aliquam iusto obcaecati quos at id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aliquam quod voluptates alias cum ut, blanditiis corrupti aliquid nulla odio corporis numquam quisquam ipsa impedit, optio voluptatum cupiditate magnam sunt.</p>
     </main>
 </body>
